@@ -6,7 +6,9 @@
 
 `localhost:8080` 접속하여 확인
 
-Ctrl Shift Enter 하면 ;이 저절로 붙어서 한줄 띄어짐
+`Ctrl Shift Enter` 하면 `;`이 저절로 붙어서 한줄 띄어짐
+
+`Alt Insert` => `Getter/Setter` 자동완성 가능
 
 
 
@@ -53,3 +55,14 @@ static class Hello{
 ```
 
 * Getter, Setter 활용
+
+
+
+## XML vs JSON
+
+* XML
+
+  ```<html>hello</html>``` 형태
+
+* JSON은 간단한 형태(객체)로 반환할 수 있기 때문에 최근에는 JSON 방식으로 통일됨
+
