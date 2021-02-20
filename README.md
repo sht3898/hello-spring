@@ -1,4 +1,4 @@
-**07 수강중**
+**12 수강중**
 
 # 실행
 
@@ -6,13 +6,23 @@
 
 `localhost:8080` 접속하여 확인
 
-`Ctrl Shift Enter` 하면 `;`이 저절로 붙어서 한줄 띄어짐
+`Ctrl + Shift + Enter` 하면 `;`이 저절로 붙어서 한줄 띄어짐
 
-`Alt Insert` => `Getter/Setter` 자동완성 가능
+`Alt + Insert` => `Getter/Setter` 자동완성 가능
+
+`Alt + Enter` => add on demand로 편하게 사용
+
+`Ctrl + Alt + V` => 변수 자동 추출
+
+`Ctrl + Alt + L` => 줄 자동 정렬
+
+`Ctrl + Alt + Shift + T` => 리팩토링 관련
 
 
 
-# 06 MVC와 템플릿 엔진
+# 스프링 웹 개발 기초
+
+## MVC와 템플릿 엔진
 
 ```html
 <html xmlns:th="http://www.thymeleaf.org">
@@ -26,7 +36,7 @@
 
 
 
-# 07 API
+## API
 
 ```java
 @GetMapping("hello-string")
@@ -58,7 +68,7 @@ static class Hello{
 
 
 
-## XML vs JSON
+### XML vs JSON
 
 * XML
 
@@ -66,3 +76,16 @@ static class Hello{
 
 * JSON은 간단한 형태(객체)로 반환할 수 있기 때문에 최근에는 JSON 방식으로 통일됨
 
+
+
+# 회원 관리 예제-백엔드 개발
+
+* `Optional` => null을 처리할 때 유용하게 쓰이는 데 추후에 설명
+* 인터페이스 생성 후 클래스로 만들 때 `implements MemberRepository`하고 `Alt + Insert` 하면 자동으로 Override 됨
+
+
+
+## 회원 리포지토리 테스트 케이스 작성
+
+* 매번 서버를 실행시키면서 테스트하기 어려움 => JQuery 활용하여 쉽게 만듦
+* 테스트는 순서를 보장할 수 없음 => 서로 의존성이 발생하면 안되기 때문에 테스트가 끝나고 나면 데이터를 없애주는 작업을 해야함
