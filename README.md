@@ -1,4 +1,4 @@
-**12 수강중**
+**13 수강중**
 
 # 실행
 
@@ -10,7 +10,7 @@
 
 `Alt + Insert` => `Getter/Setter` 자동완성 가능
 
-`Alt + Enter` => add on demand로 편하게 사용
+`Alt + Enter` => add on demand로 편하게 사용, static 설정 가능
 
 `Ctrl + Alt + V` => 변수 자동 추출
 
@@ -89,3 +89,25 @@ static class Hello{
 
 * 매번 서버를 실행시키면서 테스트하기 어려움 => JQuery 활용하여 쉽게 만듦
 * 테스트는 순서를 보장할 수 없음 => 서로 의존성이 발생하면 안되기 때문에 테스트가 끝나고 나면 데이터를 없애주는 작업을 해야함
+
+## 회원 서비스 테스트
+
+* `Ctrl + Shift + T` 을 `MemberService` 클래스 명에서 누르면 자동으로 Test를 생성할 수 있음
+
+* 같은 위치에 생성됨
+
+* 테스트는 과감하게 한글로 바꿔도 됨
+
+* given - when- then 문법 사용하기
+
+  ```java
+  @Test
+  void 회원가입() {
+      
+      // given
+      // when
+      // then
+  }
+  ```
+
+  
