@@ -1,4 +1,4 @@
-**19 수강중**
+**23 수강중**
 
 # 실행
 
@@ -144,5 +144,30 @@ static class Hello{
 
 # 스프링 DB 접근 기술
 
-## 스프링 데이터 액세스
+* 선언한 값과 return 값이 같은 `inline variable`은 `Ctrl + Shift + Alt + T`에서 추천 받거나 `Ctrl + Alt + N`으로 관리가능
 
+```java
+@Override
+public List<Member> findAll() {
+    List<Member> result = em.createQuery("select m from Member m", Member.class)
+        .getResultList();
+    return result;
+}
+```
+
+```java
+@Override
+public List<Member> findAll() {
+    return em.createQuery("select m from Member m", Member.class)
+        .getResultList();
+}
+```
+
+
+
+* Interface가 Interface를 상속받을때는 implements가 아닌 extends 사용
+
+* SpringDataJpa가 자동으로 Bean에 등록해줌
+
+* Config에서 생성자가 하나일 경우에는 Autowired 생략 가능
+* 
