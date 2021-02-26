@@ -10,7 +10,7 @@
 
 `Alt + Insert` => `Getter/Setter` 자동완성 가능
 
-`Alt + Enter` => add on demand로 편하게 사용, static 설정 가능
+`Alt + Enter` => add on demand로 편하게 사용, static 설정 가능, replace with lambda
 
 `Ctrl + Alt + V` => 변수 자동 추출
 
