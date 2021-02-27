@@ -170,4 +170,10 @@ public List<Member> findAll() {
 * SpringDataJpa가 자동으로 Bean에 등록해줌
 
 * Config에서 생성자가 하나일 경우에는 Autowired 생략 가능
-* 
+
+
+
+# AOP
+
+* 핵심되는 기능을 한 곳에 모아서 적용
+* AOP가 없다면 모든 메소드에 시간 측정과 같이 원하는 로직을 다 설계해야함
